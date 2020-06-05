@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    background-color: rgb(40, 44, 52);
+    color: white;
+}
+
+.modeList {
+    border-left: 2px solid white;
+    cursor: pointer;
+}
+.modeList:hover {
+    border-color: green;
+}
+
+.btns {
+    width: 50px;
+    height: 47px;
+}
+
+#dropdownMenuButton:hover {
+    background-color: rgb(209, 198, 198);
+    border-color: rgb(209, 198, 198);
+    color: black;
+}
+
+.main-editor {
+    background-color: inherit;
+    border-left: 15px solid grey;
+    border-right: 15px solid grey;
+    border-top: 19px solid grey;
+    color: inherit;
+    display: flex;
+    width: 100%;
+    padding: 1rem 0 1rem 1rem;
+    box-shadow: 0 4px 3px black;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+.first,
+.third {
+    background-color: inherit;
+    color: inherit;
+    font-size: 15px;
+    font-weight: 500;
+    width: 50%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: none;
+    padding: 0.4rem;
+    height: 530px;
+}
+
+
+.second {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-left: 1px solid grey;
+    width: 50%;
+    overflow-y: auto;
+    white-space: pre;
+    right: 0;
+    padding: 0.4rem;
+    height: 530px;
+}
+
+.btns:hover {
+    background-color: rgb(219, 204, 204);
+}
+
