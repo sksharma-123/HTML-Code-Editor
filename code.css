@@ -14,6 +14,10 @@ body {
     color: white;
 }
 
+.col-md-7 {
+    padding-left: 50px;
+}
+
 .modeList {
     border-left: 2px solid white;
     cursor: pointer;
@@ -79,3 +83,17 @@ body {
     background-color: rgb(219, 204, 204);
 }
 
+
+
+
+@media(max-width:767px) {
+    .col-md-7 {
+        padding-left: 40%;
+    }
+}
+
+@media(max-width:420px) {
+    .col-md-7 {
+        padding-left: 35%;
+    }
+}
