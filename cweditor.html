@@ -9,6 +9,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://sksharma-123.github.io/cwi/cwi.min.css">
     <link rel="stylesheet" href="code.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css" />
     <link rel="icon" href="web-favicon.jpg" type="image" sizes="25x20">
 
     <title>CW Editor</title>
@@ -42,37 +43,39 @@
         </div>
         <div class="main-editor d-flex br-1">
             <div class="first pl-0" id="editor" style="display: unset;" contenteditable>
-                &lt;&#33;doctype html&gt;<br />
-                &lt;html lang="en"&gt;<br />
-                &nbsp;&nbsp;&lt;head&gt;<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1,
-                shrink-to-fit=no"&gt;<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet"
-                href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-                integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-                crossorigin="anonymous"&gt;<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet"
-                href="https://sksharma-123.github.io/cwi/cwi.min.css"&gt;<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Hello World!&lt;/title&gt;<br />
-                &nbsp;&nbsp;&lt;/head&gt;<br /><br />
-                &nbsp;&nbsp;&lt;body&gt;<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello World!&lt;/h1&gt;<br /><br /><br /><br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-                crossorigin="anonymous"&gt;&lt;/script&gt;<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;script
-                src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-                crossorigin="anonymous"&gt;&lt;/script&gt;<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;script
-                src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-                crossorigin="anonymous"&gt;&lt;/script&gt;<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;script
-                src="https://sksharma-123.github.io/cwi/cwi.min.js"&gt;&lt;/script&gt;<br />
-                &nbsp;&nbsp;&lt;/body&gt;<br />
-                &lt;/html&gt;<br />
+                <code class="language-markup">
+                    &lt;&#33;doctype html&gt;<br />
+                    &lt;html lang="en"&gt;<br />
+                    &nbsp;&nbsp;&lt;head&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1,
+                    shrink-to-fit=no"&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet"
+                    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+                    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+                    crossorigin="anonymous"&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet"
+                    href="https://sksharma-123.github.io/cwi/cwi.min.css"&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Hello World!&lt;/title&gt;<br />
+                    &nbsp;&nbsp;&lt;/head&gt;<br /><br />
+                    &nbsp;&nbsp;&lt;body&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello World!&lt;/h1&gt;<br /><br /><br /><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                    crossorigin="anonymous"&gt;&lt;/script&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;script
+                    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                    crossorigin="anonymous"&gt;&lt;/script&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;script
+                    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                    crossorigin="anonymous"&gt;&lt;/script&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;script
+                    src="https://sksharma-123.github.io/cwi/cwi.min.js"&gt;&lt;/script&gt;<br />
+                    &nbsp;&nbsp;&lt;/body&gt;<br />
+                    &lt;/html&gt;<br />
+                </code>
             </div>
 
             <div class="third pl-0" id="liveEditor" style="display: none;" contenteditable>
@@ -114,7 +117,8 @@
             </iframe>
         </div>
     </div>
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
